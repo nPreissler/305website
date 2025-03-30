@@ -10,11 +10,34 @@
         @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
     </style>
 </head>
+    <style>
+        .copy-area {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .copy-btn {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #6a0dad;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .copy-btn:hover {
+            background-color: #580c9b;
+        }
+    </style>
 <body>
     <div id="webcrumbs">
         <div class="max-w-[2000px] w-full bg-white mx-auto">
             <header class="bg-purple-700 text-white py-4 px-6">
-                <h1 class="text-xl font-bold"><a href="index.html">Açai da 305</a></h1>
+                <h1 class="text-xl font-bold"><a href="index.html">Açaí da 305</a></h1>
             </header>
             <div class="p-6">
                 <div class="flex flex-col md:flex-row gap-6">
@@ -25,21 +48,29 @@
                         </div>
                     </div>
                     <div class="w-full md:w-1/2 flex flex-col">
-                        <h2 class="text-2xl font-bold mb-2">Açaí Tradicional</h2>
+                        <h2 class="text-2xl font-bold mb-2">Açaí</h2>
                         <p class="text-gray-600 mb-4">
-                            Pix: 000.000.000-00
+                        </head>
+                        <body>
+                        
+                            <h2>Chave Pix para cópia:</h2>
+                            
+                            <div class="copy-area" id="copyText">f20262b5-0373-43bb-94aa-4f4815388b2e</div>
+                            
+                            <button class="copy-btn" onclick="copiarTexto()">Copiar</button>
+                        
                             <br>
                             Lembre-se de guardar o comprovante pix para anexar ao formulário.
                         </p>
                         <div class="flex items-center mb-4">
-                            <span class="text-2xl font-bold text-purple-700">R$ XX,XX</span>
+                            <span class="text-2xl font-bold text-purple-700">R$ 10,50 a 13,50 </span>
                         </div>
                         <div class="mb-4">
                             <h3 class="text-lg font-semibold mb-2">Tamanho</h3>
                             <div class="flex gap-2 flex-wrap">
                                 <button
                                     class="px-4 py-2 border border-gray-300 rounded-lg bg-purple-100 border-purple-500 font-medium hover:bg-purple-50 transition-colors">
-                                    200ml
+                                    250ml
                                 </button>
                             </div>
                         </div>
@@ -65,6 +96,10 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center mb-6">
+
+                                    <br><br>
+                                    <br><br>
+
                                     <input type="submit" value="Realizar Pedido"
                                         class="ml-4 bg-purple-700 text-white px-6 py-2 rounded-lg font-medium hover:bg-purple-800 transition-colors flex-grow">
                                 </div>
