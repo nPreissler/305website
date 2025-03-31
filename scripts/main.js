@@ -12,7 +12,7 @@
             return;
         }
 
-        var preco = (totalSelecionados >= 3) ? "a pagar 13,50" : "a pagar 10,50";
+        var preco = (totalSelecionados >= 3) ? "a pagar 15,00" : "a pagar 13,80";
 
         var mensagemFinal = selectedOptions.join(", ") + " - " + preco;
 
