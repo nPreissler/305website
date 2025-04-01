@@ -1,4 +1,4 @@
-// alert("Leia com atenção antes de enviar suas informações")
+alert("Leia com atenção antes de enviar suas informações")
 
     document.getElementById("pedidoForm").onsubmit = function(e) {
         e.preventDefault();
@@ -12,7 +12,7 @@
             return;
         }
 
-        var preco = (totalSelecionados >= 3) ? "a pagar 15,00" : "a pagar 13,80";
+        var preco = (totalSelecionados >= 3) ? "a pagar 15,00" : "a pagar 13,00";
 
         var mensagemFinal = selectedOptions.join(", ") + " - " + preco;
 
